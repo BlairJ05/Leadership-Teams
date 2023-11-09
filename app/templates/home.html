@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Leadership Teams</h1>
+    <ul>
+        <li><a href="{% url "leadership" team="management"%}">Management</a></li>
+        <li><a href="{% url "leadership" team="community"%}">Community</a></li>
+        <li><a href="{% url "leadership" team="documentation"%}">Documentation</a></li>
+        <li><a href="{% url "leadership" team="procurement"%}">Procurement</a></li>
+    </ul>
+{% endblock content %}
